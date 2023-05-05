@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+   <!-- <Button
+        android:id="@+id/btnUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:constraint_layoutTop_toTopOf=""
+        app:constraint_layoutBottom_toTopOf=""
+        app:constraint_layoutLeft_toLeftOf=""
+        app:constraint_layoutRight_toLeftOf=""
+        android:text="<-" />
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:constraint_layoutTop_toTopOf=""
+        app:constraint_layoutBottom_toTopOf=""
+        app:constraint_layoutLeft_toLeftOf=""
+        app:constraint_layoutRight_toLeftOf=""
+        android:text="<-" />
+    <Button
+        android:id="@+id/btnDown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:constraint_layoutTop_toTopOf=""
+        app:constraint_layoutBottom_toTopOf=""
+        app:constraint_layoutLeft_toLeftOf=""
+        app:constraint_layoutRight_toLeftOf=""
+        android:text="<-" />
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:constraint_layoutTop_toTopOf=""
+        app:constraint_layoutBottom_toTopOf=""
+        app:constraint_layoutLeft_toLeftOf=""
+        app:constraint_layoutRight_toLeftOf=""
+        android:text="<-" />-->
+
+</FrameLayout>

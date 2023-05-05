@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background" >
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/btn_start"
+        app:constraint_layoutBottom_toBottomOf="parent"
+        app:constraint_layoutLeft_toLeftOf="parent"
+        app:constraint_layoutRight_toRightTo="parent"
+        app:constraint_layoutTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_layoutTop_toBottomOf="@id/btnStart"
+        app:constraint_layoutBottom_toTopOf="@+id/btnAbout"
+        app:constraint_layoutLeft_toLeftOf="parent"
+        app:constraint_layoutRight_toRightTo="parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/btn_interval"
+        android:background="@drawable/btn_results" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_layoutTop_toTopOf="parent"
+        app:constraint_layoutBottom_toBottomOf="parent"
+        app:constraint_layoutLeft_toLeftOf="parent"
+        app:constraint_layoutRight_toRightTo="parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/btn_interval"
+        android:background="@drawable/btn_about"
+        />
+
+
+</LinearLayout>

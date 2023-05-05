@@ -3,13 +3,15 @@ package com.example.snake.game
 import android.widget.Button
 
 class SnakeGame() {
-    val WIDTH = 15
-    val HEIGHT = 15
+    companion object {
+        val HEIGHT: Int = 15
+        val WIDTH: Int = 15
+    }
     val GOAL = 28
 
-    var score: Int
-    var turnDelay: Int
-    var isGameStopped: Boolean
+    var score: Int = 0
+    var turnDelay: Int = 300
+    var isGameStopped: Boolean = true
     var snake: Snake
     var apple: Apple
 
@@ -75,5 +77,10 @@ class SnakeGame() {
             btnLeft -> snake.setDirection(Direction.LEFT)
         }
     }
+
+    fun getRandomNumber(max: Int): Int {
+        return random.nextInt(max)
+    }
+
 
 }
