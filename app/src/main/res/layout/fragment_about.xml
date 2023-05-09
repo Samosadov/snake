@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".AboutFragment">
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="128dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/text_b"
+        android:textStyle="bold"
+        android:text="Выпускная квалификационная работа\nгруппа РМП-ЦПВ-62211/7МОп\nСамосадов Константин Васильевич"
+        app:constraint_layoutTop_toTopOf="parent"
+        app:constraint_layoutBottom_toTopOf="@+id/btnOk"
+        app:constraint_layoutLeft_toLeftOf="parent"
+        app:constraint_layoutRight_toRightTo="parent"
+        />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/blank_text"
+        android:background="@drawable/btn_ok"
+        app:constraint_layoutBottom_toBottomOf="parent"
+        app:constraint_layoutLeft_toLeftOf="parent"
+        app:constraint_layoutRight_toRightTo="parent"
+        app:constraint_layoutTop_toBottomOf="@id/tv_about" />
+</LinearLayout>

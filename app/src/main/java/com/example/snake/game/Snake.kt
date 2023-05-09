@@ -1,6 +1,8 @@
 package com.example.snake.game
 
-class Snake(_x: Int, _y: Int) : GameObject(_x, _y) {
+import com.example.snake.drawer.Drawer
+
+class Snake(_x: Int, _y: Int, private val drawer: Drawer) : GameObject(_x, _y) {
     private val HEAD_SIGN = "\uD83D\uDC7E"
     private val BODY_SIGN = "\u26AB"
 
@@ -23,7 +25,7 @@ class Snake(_x: Int, _y: Int) : GameObject(_x, _y) {
 
     fun draw(game: SnakeGame) {
         for (part in snakeParts) {
-//            TODO рисуем отдельные части
+            drawer.print(part)
         }
     }
 

@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Snake</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">__</string>
     <string name="btn_play">Играть</string>
     <string name="btn_results">Рекорды</string>
     <string name="btn_about">О программе</string>
+    <string name="blank_text"></string>
+    <string name="btn_ok">Есть</string>
 </resources>

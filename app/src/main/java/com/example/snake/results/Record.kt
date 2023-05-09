@@ -1,4 +1,4 @@
-package com.example.snake.Results
+package com.example.snake.results
 
 data class Record(
     val id: Long,

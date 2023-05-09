@@ -1,8 +1,10 @@
 package com.example.snake.game
 
 import android.widget.Button
+import com.example.snake.drawer.Drawer
+import kotlin.random.Random
 
-class SnakeGame() {
+class SnakeGame(var snake: Snake, var apple: Apple) {
     companion object {
         val HEIGHT: Int = 15
         val WIDTH: Int = 15
@@ -12,29 +14,27 @@ class SnakeGame() {
     var score: Int = 0
     var turnDelay: Int = 300
     var isGameStopped: Boolean = true
-    var snake: Snake
-    var apple: Apple
 
     fun gameOver() {
-        stopTurnTimer()
+//        stopTurnTimer()
         isGameStopped = true
 //        TODO Сообщение об гамовере
     }
 
     fun win() {
-        stopTurnTimer()
+//        stopTurnTimer()
         isGameStopped = true
 //        TODO Сообщение о победе
     }
 
     fun createGame() {
         turnDelay = 300
-        setTurnTimer(turnDelay)
+//        setTurnTimer(turnDelay)
         isGameStopped = false
         score = 0
-        setScore(score)
+//        setScore(score)
 
-        snake = Snake(WIDTH / 2, HEIGHT / 2)
+        snake = Snake(WIDTH / 2, HEIGHT / 2, Drawer())
         createNewApple()
         drawScene()
     }
@@ -59,9 +59,9 @@ class SnakeGame() {
         snake.move(apple)
         if (!apple.isAlive) {
             score += 5
-            setScore(score)
+//            setScore(score)
             turnDelay -= 10
-            setTurnTimer(turnDelay)
+//            setTurnTimer(turnDelay)
             createNewApple()
         }
         if (snake.getLength() > GOAL) win()
@@ -79,7 +79,7 @@ class SnakeGame() {
     }
 
     fun getRandomNumber(max: Int): Int {
-        return random.nextInt(max)
+        return Random.nextInt(max)
     }
 
 
