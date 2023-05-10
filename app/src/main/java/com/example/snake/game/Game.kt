@@ -5,8 +5,8 @@ import android.media.audiofx.DynamicsProcessing.Stage
 
 class Game: Application() {
     fun start(primaryStage: Stage) {
-        this.primaryStage = primaryStage
-        this.scoreText =
+//        this.primaryStage = primaryStage
+//        this.scoreText =
     }
 
 }

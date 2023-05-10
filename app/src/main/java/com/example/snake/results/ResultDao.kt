@@ -10,6 +10,6 @@ interface ResultDao {
     @Query("SELECT * FROM result")
     fun getData(): List<Record>
 
-    @Query("DELETE FROM result WHERE id = :_id")
-    fun deleteData(_id: Long)
+    @Query("DELETE FROM result WHERE id = :rId")
+    fun deleteData(rId: Long)
 }

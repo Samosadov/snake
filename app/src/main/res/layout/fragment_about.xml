@@ -20,10 +20,10 @@
         android:background="@drawable/text_b"
         android:textStyle="bold"
         android:text="Выпускная квалификационная работа\nгруппа РМП-ЦПВ-62211/7МОп\nСамосадов Константин Васильевич"
-        app:constraint_layoutTop_toTopOf="parent"
-        app:constraint_layoutBottom_toTopOf="@+id/btnOk"
-        app:constraint_layoutLeft_toLeftOf="parent"
-        app:constraint_layoutRight_toRightTo="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnOk"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         />
 
     <Button
@@ -34,8 +34,8 @@
         android:layout_marginTop="40dp"
         android:text="@string/blank_text"
         android:background="@drawable/btn_ok"
-        app:constraint_layoutBottom_toBottomOf="parent"
-        app:constraint_layoutLeft_toLeftOf="parent"
-        app:constraint_layoutRight_toRightTo="parent"
-        app:constraint_layoutTop_toBottomOf="@id/tv_about" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_about" />
 </LinearLayout>

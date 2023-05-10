@@ -9,7 +9,7 @@ class ResultDaoImpl: ResultDao {
         TODO("Not yet implemented")
     }
 
-    override fun deleteData(_id: Long) {
+    override fun deleteData(rId: Long) {
         TODO("Not yet implemented")
     }
 

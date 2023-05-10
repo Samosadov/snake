@@ -1,5 +1,6 @@
 package com.example.snake.game
 
+import android.content.Context
 import com.example.snake.drawer.Drawer
 import kotlin.random.Random
 
@@ -38,7 +39,7 @@ class SnakeGame() {
         score = 0
 //        setScore(score)
 
-        snake = Snake(WIDTH / 2, HEIGHT / 2, Drawer())
+        snake = Snake(WIDTH / 2, HEIGHT / 2)
         createNewApple()
         drawScene()
     }
