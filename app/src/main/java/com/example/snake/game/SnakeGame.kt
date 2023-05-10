@@ -1,10 +1,9 @@
 package com.example.snake.game
 
-import android.widget.Button
 import com.example.snake.drawer.Drawer
 import kotlin.random.Random
 
-class SnakeGame(var snake: Snake, var apple: Apple) {
+class SnakeGame() {
     companion object {
         val HEIGHT: Int = 15
         val WIDTH: Int = 15
@@ -15,16 +14,21 @@ class SnakeGame(var snake: Snake, var apple: Apple) {
     var turnDelay: Int = 300
     var isGameStopped: Boolean = true
 
+    private lateinit var snake: Snake
+    private lateinit var apple:Apple
+
     fun gameOver() {
 //        stopTurnTimer()
         isGameStopped = true
 //        TODO Сообщение об гамовере
+
     }
 
     fun win() {
 //        stopTurnTimer()
         isGameStopped = true
 //        TODO Сообщение о победе
+
     }
 
     fun createGame() {
@@ -55,7 +59,7 @@ class SnakeGame(var snake: Snake, var apple: Apple) {
         } while (snake.checkCollision(apple))
     }
 
-    fun onTurn(val n: Int) {
+    fun onTurn() { // TODO
         snake.move(apple)
         if (!apple.isAlive) {
             score += 5
@@ -69,15 +73,14 @@ class SnakeGame(var snake: Snake, var apple: Apple) {
         drawScene()
     }
 
-    fun onKeyPress(key: Button) {
+    fun keyPress(key: Keys) {
         when (key) {
-            btnUp -> snake.setDirection(Direction.UP)
-            btnRight -> snake.setDirection(Direction.RIGHT)
-            btnDown -> snake.setDirection(Direction.DOWN)
-            btnLeft -> snake.setDirection(Direction.LEFT)
+            Keys.btnUp -> snake.setDirection(Direction.UP)
+            Keys.btnRight -> snake.setDirection(Direction.RIGHT)
+            Keys.btnDown -> snake.setDirection(Direction.DOWN)
+            Keys.btnLeft -> snake.setDirection(Direction.LEFT)
         }
     }
-
     fun getRandomNumber(max: Int): Int {
         return Random.nextInt(max)
     }

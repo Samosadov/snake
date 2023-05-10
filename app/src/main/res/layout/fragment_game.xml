@@ -9,7 +9,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
@@ -18,21 +18,21 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" >
 
-        <View
+        <SurfaceView
             android:id="@+id/board"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="320dp"
             android:layout_margin="32dp"
             app:layout_constraintBottom_toTopOf="@id/btnUp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:background="@color/black"/>
+            android:background="@drawable/board"/>
         <Button
             android:id="@+id/btnUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/btnUp"
+            android:background="@drawable/btn_up"
             android:text="@string/blank_text"
             app:constraint_layoutTop_toBottomOf="@+id/board"
             app:constraint_layoutBottom_toTopOf="@+id/btnDown"
@@ -50,7 +50,7 @@
                 android:id="@+id/btnLeft"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btnLeft"
+                android:background="@drawable/btn_left"
 
                 app:constraint_layoutTop_toBottomOf="@+id/btnUp"
                 app:constraint_layoutBottom_toBottomOf="parent"
@@ -62,7 +62,7 @@
                 android:id="@+id/btnDown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btnDown"
+                android:background="@drawable/btn_down"
                 app:constraint_layoutTop_toBottomOf="@+id/btnUp"
                 app:constraint_layoutBottom_toBottomOf="parent"
                 app:constraint_layoutLeft_toRightOf="@+id/btnRight"
@@ -73,7 +73,7 @@
                 android:id="@+id/btnRight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btnRight"
+                android:background="@drawable/btn_right"
                 app:constraint_layoutTop_toBottomOf="@+id/btnUp"
                 app:constraint_layoutBottom_toBottomOf="parent"
                 app:constraint_layoutLeft_toRightOf="@+id/btnDown"

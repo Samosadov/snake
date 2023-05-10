@@ -36,7 +36,9 @@ class AboutFragment : Fragment() {
     }
 
     private fun addListenerOnButton(button: Button?) {
-        button?.setOnClickListener { onDestroyView() }
+        button?.setOnClickListener {
+            getActivity()?.supportFragmentManager?.popBackStack()
+        }
     }
 
     companion object {
